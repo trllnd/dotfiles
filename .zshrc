@@ -92,8 +92,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Base16 Shell
-BASE16_SHELL="/home/trollando/.config/base16-shell/base16-ocean.dark.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+#BASE16_SHELL="/home/trollando/.config/base16-shell/base16-ocean.dark.sh"
+#[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # Screenfetch
 screenfetch -t

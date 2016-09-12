@@ -4,7 +4,7 @@ set nocompatible              " be iMproved, required
 call plug#begin()
 "" tools
 Plug 'Shougo/vimproc.vim', {'do': 'make'}                " async execution
-Plug 'chriskempson/base16-vim'                           " base16 colors
+" Plug 'chriskempson/base16-vim'                           " base16 colors
 Plug 'ervandew/supertab'                                 " tab for completion
 Plug 'junegunn/vim-easy-align'                           " alignmnent
 Plug 'mhinz/vim-startify'                                " start screen
@@ -25,8 +25,6 @@ Plug 'eagletmt/neco-ghc',{'do': 'stack install ghc-mod'} " haskell completion
 Plug 'itchyny/vim-haskell-indent'                        " haskell indent
 Plug 'elixir-lang/vim-elixir'                            " elixir
 Plug 'davidhalter/jedi-vim'                              " python completion
-" Plug 'rust-lang/rust.vim'                                " rust
-" Plug 'racer-rust/vim-racer'                              " code completion for rust
 call plug#end()
 
 " general settings ------------------------------------------------------------
@@ -48,8 +46,8 @@ set tw=80                 " at 80
 set nowrap
 
 " base16 ----------------------------------------------------------------------
-set background=dark
-colorscheme base16-ocean
+" set background=dark
+" colorscheme base16-ocean
 
 " supertab --------------------------------------------------------------------
 let g:SuperTabDefaultCompletionType = "context"
@@ -71,6 +69,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_javascript_checkers = ['eslint']
 
 " emmet -----------------------------------------------------------------------
 let g:user_emmet_install_global = 0 " enabled just for html/css
@@ -85,12 +84,6 @@ let g:jsdoc_allow_input_prompt=1
 let g:jsdoc_input_description=1
 let g:jsdoc_underscore_private=1
 let g:jsdoc_enable_es6=1
-
-" rust ------------------------------------------------------------------------
-" g:rustfmt_autosave = 1
-" let g:racer_cmd = "$HOME/.cargo/bin/racer" " TODO : change loc
-" let g:racer_experimental_completer = 1
-" let $RUST_SRC_PATH="$HOME/rust/src" " TODO : change loc
 
 " haskell ---------------------------------------------------------------------
 nnoremap <leader>t :GhcModType<CR>
