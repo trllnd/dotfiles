@@ -21,7 +21,7 @@ Plug 'scrooloose/syntastic'                               " syntax checker
 " Plug 'LaTeX-Box-Team/LaTeX-Box'                         " latex
 " Plug 'plasticboy/vim-markdown'                          " markdowm
 " Plug 'fsharp/vim-fsharp', {'do': 'make fsautocomplete'} " fsharp
-Plug 'eagletmt/ghcmod-vim', {'do': 'stack setup; stack install hlint ghc-mod HaRe'} " haskell
+Plug 'eagletmt/ghcmod-vim', {'do': 'stack setup; stack install ghc-mod HaRe'} " haskell
 Plug 'glittershark/vim-hare'
 Plug 'eagletmt/neco-ghc'                                  " haskell completion
 Plug 'neovimhaskell/haskell-vim'
@@ -68,6 +68,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_haskell_checkers = [''] " rely on ghcmod for linting
 " let g:syntastic_javascript_checkers = ['eslint']
 
 "" emmet -----------------------------------------------------------------------
