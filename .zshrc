@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/trollando/.oh-my-zsh
+export ZSH=/home/$USER/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -49,7 +49,7 @@ ZSH_THEME="lambda" #"robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git virtualenvwrapper)
+plugins=(git) # virtualenvwrapper)
 
 # User configuration
 
@@ -92,14 +92,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Base16 Shell
-#BASE16_SHELL="/home/trollando/.config/base16-shell/base16-ocean.dark.sh"
+#BASE16_SHELL="/home/$USER/.config/base16-shell/base16-ocean.dark.sh"
 #[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
 
 # Screenfetch
-screenfetch -t
+#screenfetch -t
 
 # virtualenvwrapper (should be last part of this file)
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/Projects
-source /usr/bin/virtualenvwrapper.sh
+#export WORKON_HOME=$HOME/.virtualenvs
+#export PROJECT_HOME=$HOME/Projects
+#source /usr/bin/virtualenvwrapper.sh
 
