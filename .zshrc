@@ -53,14 +53,17 @@ plugins=(git) # virtualenvwrapper)
 
 # User configuration
 
-export PATH=$PATH"\
+export PATH="\
+:$HOME/.local/bin\
+:$HOME/.rbenv/bin\
+:$HOME/.rbenv/plugins/ruby-build/bin
 :/usr/local/sbin\
 :/usr/local/bin\
 :/usr/bin\
 :/usr/bin/site_perl\
 :/usr/bin/vendor_perl\
 :/usr/bin/core_perl\
-:$HOME/.local/bin"
+"$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -102,4 +105,6 @@ source $ZSH/oh-my-zsh.sh
 #export WORKON_HOME=$HOME/.virtualenvs
 #export PROJECT_HOME=$HOME/Projects
 #source /usr/bin/virtualenvwrapper.sh
+
+eval "$(rbenv init -)"
 
