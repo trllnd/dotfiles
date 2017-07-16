@@ -18,6 +18,8 @@ Plug 'glittershark/vim-hare'     , {'for': 'haskell'} " refactoring
 Plug 'eagletmt/neco-ghc'         , {'for': 'haskell'} " completion
 Plug 'neovimhaskell/haskell-vim' , {'for': 'haskell'} " indent
 Plug 'vim-ruby/vim-ruby'         , {'for': 'ruby'}
+Plug 'elixir-lang/vim-elixir'    , {'for': 'elixir'}
+
 call plug#end()
 
 " general settings ------------------------------------------------------------
