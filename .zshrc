@@ -56,13 +56,14 @@ plugins=(git) # virtualenvwrapper)
 export PATH="\
 :$HOME/.local/bin\
 :$HOME/.rbenv/bin\
-:$HOME/.rbenv/plugins/ruby-build/bin
-:/usr/local/sbin\
-:/usr/local/bin\
-:/usr/bin\
+:$HOME/.rbenv/plugins/ruby-build/bin\
+:/usr/bin/core_perl\
 :/usr/bin/site_perl\
 :/usr/bin/vendor_perl\
-:/usr/bin/core_perl\
+:/usr/bin\
+:/usr/local/bin\
+:/usr/local/go/bin\
+:/usr/local/sbin\
 "$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
