@@ -26,7 +26,6 @@ call plug#end()
 set hidden                 " hides buffers instead of closing them
 set encoding=utf-8
 set clipboard=unnamedplus  " allows accessing the system clipboard
-" set guifont=Monospace\ 10 " Fixedsys\ Excelsior\ 3.01-L2\ 12
 " set guioptions-=T         " removes toolbar
 " set guioptions-=m         " removes menu bar
 " set guioptions-=r         " removes right-hand scroll bar
@@ -51,7 +50,7 @@ nmap ga <Plug>(EasyAlign)| " Start interactive EasyAlign for a motion/text objec
 let g:airline_theme='simple'
 set laststatus=2
 let g:airline_powerline_fonts=1
-" let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#tabline#enabled=1
 
 " syntastic -------------------------------------------------------------------
 set statusline+=%#warningmsg#

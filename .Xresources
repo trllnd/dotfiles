@@ -1,11 +1,42 @@
-URxvt.scrollBar   : false
-URxvt.transparent : true
-URxvt.shading     : 20
-URxvt*letterSpace : -2
-Xft.antialias: true
-Xft.hinting: true
-Xft.hintstyle: hintfull
+URxvt.externalBorder  : 0
+URxvt.font            : xft:DejaVu Sans Mono for Powerline:size=8
+URxvt.internalBorder  : 0
+URxvt.letterSpace     : -2
+URxvt.perl-ext-common : font-size
+URxvt.scrollBar       : false
+URxvt.shading         : 20
+URxvt.transparent     : true
+Xft.antialias         : true
 ! dpi should be: xdpyinfo | grep dots
-Xft.dpi: 96
-Xft.rgba: rgb
-URxvt.font: xft:Fira Mono for Powerline:size=10
+Xft.dpi               : 96
+Xft.hinting           : true
+Xft.hintstyle         : hintfull
+Xft.rgba              : rgb
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
