@@ -1,1 +1,11 @@
-#include ".Xresources.d/xtermrc"
+URxvt.scrollBar   : false
+URxvt.transparent : true
+URxvt.shading     : 20
+URxvt*letterSpace : -2
+Xft.antialias: true
+Xft.hinting: true
+Xft.hintstyle: hintfull
+! dpi should be: xdpyinfo | grep dots
+Xft.dpi: 96
+Xft.rgba: rgb
+URxvt.font: xft:Fira Mono for Powerline:size=10

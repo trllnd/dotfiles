@@ -50,7 +50,7 @@ nmap ga <Plug>(EasyAlign)| " Start interactive EasyAlign for a motion/text objec
 " airline ---------------------------------------------------------------------
 let g:airline_theme='simple'
 set laststatus=2
-" let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=1
 " let g:airline#extensions#tabline#enabled=1
 
 " syntastic -------------------------------------------------------------------

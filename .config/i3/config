@@ -30,7 +30,7 @@ font pango:monospace 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec xterm
+bindsym $mod+Return exec urxvtc
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -40,15 +40,15 @@ bindsym $mod+Shift+q kill
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
-bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+# bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
+bindsym $mod+d exec rofi -show drun # -theme ~/.config/rofi/rofi-themes/User\ Themes/sidetab.rasi
 
 # change focus
 bindsym $mod+h focus left
 bindsym $mod+j focus down
 bindsym $mod+k focus up
 bindsym $mod+l focus right
-
-# alternatively, you can use the cursor keys:
+# alternatively, you can use the cursor keys
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
@@ -59,8 +59,7 @@ bindsym $mod+Shift+h move left
 bindsym $mod+Shift+j move down
 bindsym $mod+Shift+k move up
 bindsym $mod+Shift+l move right
-
-# alternatively, you can use the cursor keys:
+# alternatively, you can use the cursor keys
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
@@ -118,8 +117,10 @@ bindsym $mod+Shift+0 move container to workspace 10
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
+
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
+
 # exit i3 (logs you out of your X session)
 bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
@@ -157,19 +158,22 @@ bar {
   	    position top
 }
 
-#
+# borders / title bar
 hide_edge_borders both
 new_window none
 
-# startup
-exec --no-startup-id nm-applet
-exec --no-startup-id variety
-exec redshiftgui
 
-# i3blocks related
+# i3blocks
 bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
 bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 
-# i3lock related
+# i3lock
 bindsym $mod+Control+l exec i3lock -c 000000 -n
+
+# startup
+exec --no-startup-id urxvtd -o -f -q
+exec_always --no-startup-id compton -b -f
+exec --no-startup-id nm-applet
+exec --no-startup-id variety
+exec redshiftgui
 

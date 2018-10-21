@@ -64,7 +64,7 @@ export PATH="\
 :/usr/local/bin\
 :/usr/local/go/bin\
 :/usr/local/sbin\
-"$PATH
+:"$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
@@ -98,6 +98,11 @@ source $ZSH/oh-my-zsh.sh
 # Base16 Shell
 #BASE16_SHELL="/home/$USER/.config/base16-shell/base16-ocean.dark.sh"
 #[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+# Base16 Shell
+BASE16_SHELL="$HOME/.config/base16-shell/"
+[ -n "$PS1" ] && \
+    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+        eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 # Screenfetch
 #screenfetch -t
