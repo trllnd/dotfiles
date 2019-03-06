@@ -30,7 +30,7 @@ font pango:DejaVu Sans Mono 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec urxvtc
+bindsym $mod+Return exec termite
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -171,7 +171,6 @@ bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
 bindsym $mod+Control+l exec i3lock -c 000000 -n
 
 # startup
-exec --no-startup-id urxvtd -o -f -q
 exec_always --no-startup-id compton -b -f
 exec --no-startup-id nm-applet
 exec --no-startup-id variety

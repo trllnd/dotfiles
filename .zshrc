@@ -52,6 +52,7 @@ ZSH_THEME="lambda" #"robbyrussell"
 plugins=(git) # virtualenvwrapper)
 
 # User configuration
+export GOPATH=$HOME/Projects
 
 export PATH="\
 :$HOME/.local/bin\
@@ -64,6 +65,7 @@ export PATH="\
 :/usr/local/bin\
 :/usr/local/go/bin\
 :/usr/local/sbin\
+:$GOPATH/bin\
 :"$PATH
 
 # export MANPATH="/usr/local/man:$MANPATH"
