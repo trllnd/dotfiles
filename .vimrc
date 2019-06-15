@@ -14,10 +14,12 @@ Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'                 " git
 Plug 'vim-airline/vim-airline'            " status bar
 Plug 'vim-airline/vim-airline-themes'
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 
 "" langs
 Plug 'scrooloose/syntastic' " syntax checker
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'godoctor/godoctor.vim'
 
 call plug#end()
 
